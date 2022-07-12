@@ -4,41 +4,20 @@
   padding: 0;
 }
 
+body {
+  font-family: "Poppins";
+}
+
 img {
   max-width: 100%;
 }
 
-.hero {
-  max-width: 100%;
-}
-
-.activities {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .container {
   width: min(90%, 1110px);
-  margin-inline: auto;
-}
-
-.activity-img {
-  border-radius: 9px;
-  position: relative;
-}
-
-nav {
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
-  padding-block: 2em;
-}
-
-.logo {
-  max-width: 100px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-family: Poppins;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -59,6 +38,65 @@ p {
   margin-block: 1em;
 }
 
-.badge {
+.navbar {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  padding-block: 2em;
+  margin-bottom: 2em;
+}
+
+.logo {
+  width: 100px;
+}
+
+.hero__img {
+  width: 900px;
+}
+
+.card {
+  position: relative;
+  margin-block: 2em;
+}
+
+.card__img {
+  border-radius: 9px;
+  width: 100%;
+}
+
+.card__badge {
   position: absolute;
+  top: 1em;
+  left: 1em;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.card__stats {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card__price {
+  font-weight: 700;
+}
+
+.star-icon {
+  height: 14px;
+  width: 14px;
+}
+
+@media (min-width: 500px) {
+  .activities {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: auto;
+  }
+
+  .card {
+    width: 350px;
+  }
 }

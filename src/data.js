@@ -1,4 +1,5 @@
-const experienceData = [
+// eslint-disable-next-line import/no-anonymous-default-export
+export default [
   {
     id: 1,
     title: "Life Lessons with Katie Zaferes",
@@ -42,5 +43,3 @@ const experienceData = [
     openSpots: 3,
   },
 ];
-
-export default experienceData;

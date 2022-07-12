@@ -1,17 +1,17 @@
-import experienceData from "./data.js";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Card from "./components/Card";
+import experienceData from "./data.js";
 
 function App() {
-  const experienceElement = experienceData.map((experience) => (
-    <Experience activity={experience} key={experience.id} />
+  const experienceElement = experienceData.map((item) => (
+    <Card activity={item} key={item.id} />
   ));
 
   return (
     <div className="">
       <Navbar />
-      <Header />
+      <Hero />
       <section className="activities container">{experienceElement}</section>
     </div>
   );
